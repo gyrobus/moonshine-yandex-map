@@ -19,6 +19,11 @@ final class YandexMapServiceProvider extends ServiceProvider
             __DIR__ . '/../../config/moonshine-yandex-map.php' => config_path('moonshine-yandex-map.php'),
         ]);
 
+        $this->mergeConfigFrom(
+            __DIR__ . '/../../config/moonshine-yandex-map.php',
+            'moonshine-yandex-map'
+        );
+
         $this->publishes([
             __DIR__ . '/../../public' => public_path('vendor/moonshine-ymap'),
         ], ['moonshine-map-assets', 'laravel-assets']);

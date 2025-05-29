@@ -1,0 +1,38 @@
+{
+  "name": "gyrobus/moonshine-yandex-map",
+  "description": "Yandex map field for moonshine v3",
+  "keywords": ["laravel", "yandex", "map", "field", "moonshine"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavel Andante",
+      "email": "pavel-andante@yandex.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/gyrobus/moonshine-yandex-map/issues",
+    "source": "https://github.com/gyrobus/moonshine-yandex-map"
+  },
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "moonshine/moonshine": ">3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gyrobus\\MoonshineYandexMap\\": "src/"
+    }
+  },
+  "conflict": {
+    "moonshine/moonshine": "<3.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Gyrobus\\MoonshineYandexMap\\Providers\\YandexMapServiceProvider"
+      ]
+    }
+  }
+}
